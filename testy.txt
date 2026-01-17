@@ -1,0 +1,15 @@
+if (x == 10) // This is a comment //
+{
+    float y = -3.14;
+    double sci = 1.25e-10;
+}
+/* This is a 
+   multi-line comment */
+"hello_world.c" 'data.txt'
+cst12342010
+cst99992010
+cst11112015
+while (continue) 
+LineStartIdentifier 55 && 100
+"String with \"escaped\" quotes"
+.5e+5spaces

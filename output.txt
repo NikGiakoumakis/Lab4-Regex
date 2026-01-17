@@ -1,0 +1,40 @@
+Identifier at the start of file: if
+**
+**
+Operator: ==
+**
+Number: 10
+**
+Comment: // This is a comment //
+**
+**
+**
+Operator: =
+**
+Decimal Number: -3.14
+**
+**
+**
+Operator: =
+**
+Scientific Number: 1.25e-10
+Comment: /* This is a 
+   multi-line comment */
+File Name: "hello_world.c"
+**
+File Name: 'data.txt'
+Student ID: cst1234
+Student ID: cst9999
+Identifier at the start of file: cst11112015
+Identifier at the start of file: while
+**
+**
+Identifier at the start of file: LineStartIdentifier
+**
+Number: 55
+**
+Operator: &&
+**
+Number: 100
+String Literal: "String with \"escaped\" quotes"
+Scientific Number: .5e+5
