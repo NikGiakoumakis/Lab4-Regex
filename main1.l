@@ -6,7 +6,7 @@ FILE *fout;
 %}
 %%
 
-\/\*([^*]|\*+[^*/])*\*+\/|\/\/([^\n])*				        { fprintf(fout, "Comment: %s\n", yytext); }
+\/\*([^*]|(\*+[^*/]))*\*\/|\/\/([^\n])*\/\/				        { fprintf(fout, "Comment: %s\n", yytext); }
 ^cst[0-9]{4}2010											{ yytext[7] = '\0'; 
 															  fprintf(fout, "Student ID: %s\n", yytext); }
 
