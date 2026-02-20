@@ -12,6 +12,7 @@ FILE *fout;
 
 \"[a-zA-Z]([a-zA-Z0-9_]*)\.([a-zA-Z0-9]{1,3})+\"|\'[a-zA-Z0-9_]([a-zA-Z0-9_]*)\.([a-zA-Z0-9]{1,3})+\' 	{ fprintf(fout, "File Name: %s\n", yytext); }
 \"(\\.|[^"\\])*\"|\'(\\.|[^'\\])*\'							{ fprintf(fout, "String Literal: %s\n", yytext); }
+\b(if|else|continue|while|for)\b
 ^[a-zA-Z0-9]+												{ fprintf(fout, "Identifier at the start of file: %s\n", yytext); }
 [+-]?[0-9]+													{ fprintf(fout, "Number: %s\n", yytext); }
 [+-]?((0|[1-9][0-9]*)\.[0-9]*|\.[0-9]+)						{ fprintf(fout, "Decimal Number: %s\n", yytext); }
