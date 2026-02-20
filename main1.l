@@ -29,9 +29,6 @@ FILE *fout;
 
 ^cst[0-9]{4}2010											{ yytext[7] = '\0'; 
 															  fprintf(fout, "Student ID: %s\n", yytext); }
-
-\"[a-zA-Z]([a-zA-Z0-9_]*)\.([a-zA-Z0-9]{1,3})+\"|\'[a-zA-Z0-9_]([a-zA-Z0-9_]*)\.([a-zA-Z0-9]{1,3})+\' 	{ fprintf(fout, "File Name: %s\n", yytext); }
-\"(\\.|[^"\\])*\"|\'(\\.|[^'\\])*\'							{ fprintf(fout, "String Literal: %s\n", yytext); }
 \b(if|else|continue|while|for)\b							{ fprintf(fout, "Keyword: %s\n", yytext); }
 ^[a-zA-Z0-9]+												{ fprintf(fout, "Identifier at the start of file: %s\n", yytext); }
 [+-]?[0-9]+													{ fprintf(fout, "Number: %s\n", yytext); }

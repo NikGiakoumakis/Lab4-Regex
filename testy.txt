@@ -5,6 +5,9 @@ if (x == 10) // This is a comment //
 }
 /* This is a 
    multi-line comment */
+
+" /* This is also a string literal not a comment */ "
+
 "hello_world.c" 'data.txt'
 cst12342010
 cst99992010
